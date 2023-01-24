@@ -1,10 +1,9 @@
 import React from "react";
 import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
-import "./App.css";
+import { Counter } from "./features/app/Counter";
 
 function App() {
-  return <div className="App">Test</div>;
+  return <div>Test</div>;
 }
 
 export default App;
