@@ -1,5 +1,4 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
-import counterReducer from "../features/app/counterSlice";
 import rootReducer from "./root.reducer";
 import createSagaMiddleware from "redux-saga";
 // import logger from "redux-logger";
