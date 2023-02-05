@@ -5,11 +5,15 @@ import { initialState } from "./App.interface";
 export const appSlice = createSlice({
   name: "app",
   initialState,
-  reducers: {},
+  reducers: {
+    toggleAppTheme(state, action) {
+      state.theme = state.theme === "light" ? "dark" : "light";
+    },
+  },
 });
 
-export const {} = appSlice.actions;
+export const { toggleAppTheme } = appSlice.actions;
 
-export const selectState = (state: RootState) => state.app;
+export const getTheme = (state: RootState) => state.app.theme;
 
 export default appSlice.reducer;
