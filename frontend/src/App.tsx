@@ -5,6 +5,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useAppDispatch, useAppSelector } from "./app/hooks";
 import { getTheme } from "./features/app/app.slice";
 import { getWeatherRequest } from "./features/weather/weather.slice";
+import { TrafficMapComponent } from "./features/traffic/TrafficMap.component";
 
 function App() {
   const appTheme: any = useAppSelector(getTheme);
@@ -29,6 +30,7 @@ function App() {
         >
           Hello World
         </Button>
+        <TrafficMapComponent />
       </div>
     </ThemeProvider>
   );
