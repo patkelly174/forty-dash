@@ -12,7 +12,7 @@ const center = {
 export function TrafficMapComponent() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyA3waqTqvfpgIgk79gOPj0RI8iMp0OFICE",
+    googleMapsApiKey: "",
   });
 
   const [map, setMap] = React.useState(null);
